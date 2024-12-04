@@ -15,6 +15,11 @@
     margin-left: 250px;
    
 }
+#student{
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
 
 .sidebar{
     position: absolute;
