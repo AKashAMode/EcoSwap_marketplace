@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="./../css/electronics.css">
+    <link rel="javascript" href="./../JavaScript/electronics.js">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="javascript" href="./../JavaScript/app.js">
+    <link rel="stylesheet" href="./../css/vehicle.css">
+    <link rel="javascript" href="./../JavaScript/vehicle.js">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-box">
+                <h2 class="logo">EcoSwap</h2>
+            </div>
+            <div class="select-location-container">
+                <select name="select location" id="select-option">
+                    <option>Select Location</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune" onclick="filter1('Pune')" >Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div>
+            <div class="product-search-container">
+                <input type="text" class="product-search-input">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <div class="select-language-contaiiner">
+                <select id="select-language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+
+            <div class="product-sell-box">
+                <button class="sell-product-btn">
+                    <i class="fa-solid fa-plus sell-icon"></i>
+                    SELL
+                </button>
+            </div>
+
+            <div class="user-profile">
+                <i class="fa-regular fa-user profile-img"></i>
+            </div>
+
+        </div>
+
+        <!-- sub-navbar ----------------------------------------------------->
+
+        <div class="sub-navbar">
+            <div class="navbar-pages-container">
+              <div class="vehicals-page">
+                  <p class="style-p"><a href="../pages/vehicle.html" class="sub-nav-anchor">Vehicles : Bike & Car & Scooter</a></p>
+              </div>
+      
+              <div class="RealEtate-page">
+                  <p class="style-p"><a href="../pages/real-estate.html" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+              </div>
+      
+              <div class="Electronics-page">
+                  <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone & Laptop & Tablet</a></p>
+              </div>
+            </div>
+      </div>
+
+    </header>
+
+    <!--slider-->
+
+    <div class="hero-section">
+        <div class="slider-main">
+            <img src="./../img/mobiles/slider2.jpg" alt="" class="slider-img" onclick="next()" id="new">
+        </div>
+    </div>
+
+    <!-- Home Section -------------------------------------- -->
+
+    <div class="home">
+        <div class="cards">
+            <div class="twocards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/image (1).jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">i Phone 14</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Nagpur, MH
+                        </p>
+                        <p class="product-description">
+                           New release iphone  with 14 8gb , 128gb storage in black color
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 20500.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/lapi1.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title"> DELL Laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Pune, MH
+                        </p>
+                        <p class="product-description">
+                            Stylish and comfortable wireless headphones for a seamless audio experience.
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 87000.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/slider2.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">lenovo laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Nagpur, MH
+                        </p>
+                        <p class="product-description">
+                           lenovo thinkpad laptop for office use <br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 90234.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="twocards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/lapi2.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Asus Zenobook laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Mumbai, MH
+                        </p>
+                        <p class="product-description">
+                           asus zenbook oled display 180 degree screen rotation laptop
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 99995.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/iphone16.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">iphone 16</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Pune, MH
+                        </p>
+                        <p class="product-description">
+                           google pixel new release mobile in low budget<br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 100000.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/lapi3.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">DELL laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Nagpur, MH
+                        </p>
+                        <p class="product-description">
+                           laptop for daily use <br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 11799.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="twocards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/image (4).jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">iphone 12</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Pune, MH
+                        </p>
+                        <p class="product-description">
+                           iphone 12 with 8gb 128gb storage in gray color<br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 45000.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/image (5).jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">iphone se</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Nagpur, MH
+                        </p>
+                        <p class="product-description">
+                            Stylish and comfortable iphone for a seamless  experience.
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 18000.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/lapi5.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Mumbai, MH
+                        </p>
+                        <p class="product-description">
+                            Laptop for office use <br>
+                            <br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 23399.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="twocards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/lapi6.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">HP laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> pune, MH
+                        </p>
+                        <p class="product-description">
+                            HP 360 touch screen laptop for daily use<br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 89809.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/slider4.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">laptop</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> pune, MH
+                        </p>
+                        <p class="product-description">
+                            Best performance laptop for office use <br><br>
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 111799.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../img/mobiles/image (2).jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">iphone 13 pro</h2>
+                        <p class="product-location">
+                            <i class="fa fa-map-marker"></i> Nagpur, MH
+                        </p>
+                        <p class="product-description">
+                            Stylish and comfortable iphone  for a seamless  experience.
+                        </p>
+                        <div class="product-information">
+                            <span class="product-price">₹ 72299.99</span>
+                            <button class="btn secondary-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="sidebar">
+            <hr>
+            <br><br>
+            <div class="angle">
+                <h2 class="sidebar-categories">Categories</h2>
+                <i class="fa-solid fa-angle-down angle-down" id="down-arrow" onclick="down()"></i>
+                <i class="fa-solid fa-angle-up angle-up" id="up-arrow" onclick="up()"></i>
+            </div>
+            <br>
+
+
+            <div id="sidebar-container">
+                <p class="sidebar-mobile" id="mobiles" onclick="filter('iphone')"> - Mobiles</p>
+                <a href="./laptops.html" class="sidebar-mobile">
+                    <p id="laptops"> - Laptops
+                </a></p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <hr>
+
+            <div class="angle">
+                <h2 class="sidebar-categories">Location</h2>
+                <i class="fa-solid fa-angle-down angle-down" id="down-arrow2" onclick="downarrow()"></i>
+                <i class="fa-solid fa-angle-up angle-up" id="up-arrow2" onclick="uparrow()"></i>
+            </div>
+            <br>
+            <div>
+                <input type="text" id="student" placeholder="search" onkeyup="load()">
+                <br>
+                <br>
+                <div class="entry  " id="studentcontainer">
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+
+            <div class="popular-locations">
+                <h2 class="footer-heading-style">Popular Locations</h2>
+                <div class="locations footer-anchor-style">
+                    <a href="#" class="anchor-style">Mumbai</a>
+                    <a href="#" class="anchor-style">Nagpur</a>
+                    <a href="#" class="anchor-style">Pune</a>
+                    <a href="#" class="anchor-style">Chennai</a>
+                </div>
+            </div>
+
+            <div class="trending-locations">
+                <h2 class="footer-heading-style">Trending Locations</h2>
+                <div class="locations footer-anchor-style">
+                    <a href="#" class="anchor-style"> Bhubaneshwar</a>
+                    <a href="#" class="anchor-style"> Hyderabad </a>
+                    <a href="#" class="anchor-style">Chandigarh</a>
+                    <a href="#" class="anchor-style"> Nashik</a>
+                </div>
+            </div>
+
+            <div class="about-us">
+                <h2 class="footer-heading-style">About Us</h2>
+                <div class="locations footer-anchor-style">
+                    <a href="#" class="anchor-style">Tech@EcoSwap</a>
+                </div>
+            </div>
+
+            <div class="popular-locations">
+                <h2 class="footer-heading-style">EcoSwap</h2>
+                <div class="site-about footer-anchor-style">
+                    <a href="#" class="anchor-style">Blog</a>
+                    <a href="#" class="anchor-style">Help</a>
+                    <a href="#" class="anchor-style">Sitemap</a>
+                    <a href="#" class="anchor-style">Legal & Privacy information</a>
+                </div>
+            </div>
+
+            <div class="popular-locations">
+                <h1 class="footer-heading-style">Follow Us</h1>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram footer-icon-style"></i>
+                    <i class="fa-brands fa-facebook footer-icon-style"></i>
+                    <i class="fa-brands fa-twitter footer-icon-style"></i>
+                    <i class="fa-brands fa-linkedin footer-icon-style"></i>
+                    <i class="fa-brands fa-youtube footer-icon-style"></i>
+                </div>
+            </div>
+
+        </div>
+        <hr class="plane-line">
+        <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7b6884abf8.js" crossorigin="anonymous"></script>
+    <script>
+
+
+
+        const student = ['pune', 'mumbai', 'nagpur', 'goa']
+
+        const students = document.getElementById('studentcontainer')
+
+        student.foreach((std) => {
+            students.innerHTML += `<div class="entry">${std}</div>`
+        })
+
+
+        function load() {
+            const searchtext = document.getElementById('student');
+            const inputtext = searchtext.value;
+            const text = inputtext.toLowerCase()
+
+            students.innerHTML = ''
+
+            const filteredstd = student.filter((std) => {
+                if (std.includes(text)) {
+                    return true;
+                }
+            })
+            filteredstd.forEach((std) => {
+
+                students.innerHTML += `<div class="entry">${std}</div>`
+            })
+
+        }
+
+
+
+
+
+
+
+
+        function up() {
+            const sidebar = document.getElementById('sidebar-container');
+            const up = document.getElementById('up-arrow');
+            const down = document.getElementById('down-arrow')
+
+            down.style.visibility = 'visible'
+            sidebar.style.visibility = 'hidden';
+            up.style.visibility = 'hidden';
+        }
+
+        function down() {
+            const sidebar = document.getElementById('sidebar-container');
+            const up = document.getElementById('up-arrow');
+            const down = document.getElementById('down-arrow')
+
+            down.style.visibility = 'hidden'
+            sidebar.style.visibility = 'visible';
+            up.style.visibility = 'visible';
+        }
+
+        function uparrow() {
+            const sidebar = document.getElementById('sidebar-container2');
+            const up = document.getElementById('up-arrow2');
+            const down = document.getElementById('down-arrow2')
+
+            down.style.visibility = 'visible'
+            sidebar.style.visibility = 'hidden';
+            up.style.visibility = 'hidden';
+        }
+
+        function downarrow() {
+            const sidebar = document.getElementById('sidebar-container2');
+            const up = document.getElementById('up-arrow2');
+            const down = document.getElementById('down-arrow2')
+
+            down.style.visibility = 'hidden'
+            sidebar.style.visibility = 'visible';
+            up.style.visibility = 'visible';
+        }
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const selectBox = document.getElementById('select-option');
+
+            const cards = document.querySelectorAll('.product-card');
+
+            selectBox.addEventListener('change', function () {
+
+                const selectedLocation = selectBox.value;
+
+                cards.forEach(card => {
+
+                    const cardLocation = card.querySelector('.product-location').textContent;
+
+                    if (selectedLocation === "Select Location" || cardLocation.includes(selectedLocation)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+
+
+        //
+
+        // side-bar-code
+
+
+        let allimg = [
+            "./../img/mobiles/slider1.jpg", './../img/mobiles/slider2.jpg', './../img/mobiles/slider3.jpg', './../img/mobiles/slider4.jpeg'
+        ];
+        let index = 0;
+        let images = document.getElementById('new');
+        
+        
+        function next() {
+            if(index<allimg.length-1){
+                index++;
+            }else{
+                index = 0;
+            }
+            images.src = allimg[index]
+        }
+        setInterval(
+            next,2000
+        );
+
+
+        // filter for location
+
+        function filter1(Pune) {
+    
+            const cardElement1 = document.querySelectorAll('.product-card');
+            
+            cardElement1.forEach(item => {
+                
+                const productName1 = card1.querySelector('.product-location').textContent;
+        
+                if (productName1.includes(Pune)) {
+                    item.style.display = 'block';  
+                } else {
+                    item.style.display = 'none';  
+                }
+            });
+        }
+
+        function filter(iphone) {
+    
+            const cardElement = document.querySelectorAll('.product-card');
+            
+            cardElement.forEach(item => {
+                
+                const productName = card1.querySelector('.product-title').textContent;
+        
+                if (productName.includes(iphone)) {
+                    item.style.display = 'block';  
+                } else {
+                    item.style.display = 'none';  
+                }
+            });
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
