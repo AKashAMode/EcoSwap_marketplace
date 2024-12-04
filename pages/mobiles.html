@@ -26,8 +26,8 @@
             <div class="select-location-container">
                 <select name="select location" id="select-option">
                     <option>Select Location</option>
-                    <option value="Nagpur" onclick="filter('Pune')" >Nagpur</option>
-                    <option value="Pune">Pune</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune" onclick="filter1('Pune')" >Pune</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Goa">Goa</option>
                 </select>
@@ -173,10 +173,10 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="../img/mobiles/image (3).jpeg" alt="Product Image">
+                        <img src="../img/mobiles/iphone16.jpg" alt="Product Image">
                     </div>
                     <div class="product-details">
-                        <h2 class="product-title"> Google Pixel </h2>
+                        <h2 class="product-title">iphone 16</h2>
                         <p class="product-location">
                             <i class="fa fa-map-marker"></i> Pune, MH
                         </p>
@@ -261,7 +261,7 @@
                         <img src="../img/mobiles/lapi5.jpeg" alt="Product Image">
                     </div>
                     <div class="product-details">
-                        <h2 class="product-title">Laptop</h2>
+                        <h2 class="product-title">laptop</h2>
                         <p class="product-location">
                             <i class="fa fa-map-marker"></i> Mumbai, MH
                         </p>
@@ -305,7 +305,7 @@
                         <img src="../img/mobiles/slider4.jpeg" alt="Product Image">
                     </div>
                     <div class="product-details">
-                        <h2 class="product-title">Laptop</h2>
+                        <h2 class="product-title">laptop</h2>
                         <p class="product-location">
                             <i class="fa fa-map-marker"></i> pune, MH
                         </p>
@@ -362,7 +362,7 @@
 
 
             <div id="sidebar-container">
-                <p class="sidebar-mobile" id="mobiles"> - Mobiles</p>
+                <p class="sidebar-mobile" id="mobiles" onclick="filter('iphone')"> - Mobiles</p>
                 <a href="./laptops.html" class="sidebar-mobile">
                     <p id="laptops"> - Laptops
                 </a></p>
@@ -585,24 +585,37 @@
 
         // filter for location
 
-        function filter(Pune) {
+        function filter1(Pune) {
     
-            const cardelement = document.querySelectorAll('.products-card');
+            const cardElement1 = document.querySelectorAll('.product-card');
             
-            cardelement.forEach(card1 => {
+            cardElement1.forEach(item => {
                 
-                const productName = item.querySelector('.product-location').textContent;
+                const productName1 = card1.querySelector('.product-location').textContent;
         
-                if (productName.includes(Pune)) {
+                if (productName1.includes(Pune)) {
                     item.style.display = 'block';  
                 } else {
                     item.style.display = 'none';  
                 }
             });
         }
+
+        function filter(iphone) {
+    
+            const cardElement = document.querySelectorAll('.product-card');
+            
+            cardElement.forEach(item => {
+                
+                const productName = card1.querySelector('.product-title').textContent;
         
-
-
+                if (productName.includes(iphone)) {
+                    item.style.display = 'block';  
+                } else {
+                    item.style.display = 'none';  
+                }
+            });
+        }
 
 
 
